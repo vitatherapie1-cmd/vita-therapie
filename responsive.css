@@ -2,117 +2,106 @@
 /* Responsive Mobile */
 /* ========================= */
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
 
-/* Navbar */
-.navbar{
+  .navbar{
+    display:flex;
     flex-direction:column;
-    justify-content:center;
     align-items:center;
-    padding:20px;
-    gap:20px;
-    position:relative;
-}
-
-.logo{
-    font-size:28px;
-}
-
-.nav-links{
-    flex-direction:column;
     gap:15px;
-    width:100%;
+    padding:20px;
+    position:relative;
+  }
+
+  .logo{
+    font-size:42px;
     text-align:center;
-}
+  }
 
-.nav-links li{
+  .nav-links{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    padding:0;
+    margin:0;
+  }
+
+  .nav-links li{
     list-style:none;
-}
+  }
 
-.btn{
+  .btn{
     width:220px;
     text-align:center;
-}
+  }
 
-/* Hero */
-.hero{
-    flex-direction:column-reverse;
+  /* Hero */
+
+  .hero{
+    flex-direction:column;
     text-align:center;
-    padding:40px 20px;
-    gap:30px;
-    min-height:auto;
-}
+    padding:170px 20px 40px;
+  }
 
-.hero-text,
-.hero-image{
+  .hero-text,
+  .hero-image{
     width:100%;
-}
+  }
 
-.hero-text h1{
-    font-size:38px;
-    line-height:1.3;
-}
+  .hero-text h1{
+    font-size:36px;
+    line-height:1.2;
+  }
 
-.hero-text p{
-    font-size:17px;
-}
+  .hero-text p{
+    font-size:18px;
+  }
 
-.hero-image img{
+  .hero-image img{
     width:100%;
     max-width:350px;
     height:auto;
-}
+  }
 
-.bouttons{
-    justify-content:center;
-    flex-wrap:wrap;
-}
-
-/* Rendez-vous */
-.appointment{
+  .bouttons{
+    display:flex;
     flex-direction:column;
-    padding:40px 20px;
-    gap:30px;
-}
+    align-items:center;
+    gap:15px;
+  }
 
-.appointment-form,
-.appointment-image{
+  /* Rendez-vous */
+
+  .appointment{
+    flex-direction:column;
+    padding:140px 20px 40px;
+  }
+
+  .appointment-form,
+  .appointment-image{
     width:100%;
-}
+  }
 
-.appointment-form{
+  .appointment-form{
     padding:25px;
-}
+  }
 
-.appointment-image img{
+  .appointment-image img{
     width:100%;
     height:auto;
-}
+  }
 
-.appointment-form input,
-.appointment-form select,
-.appointment-form textarea,
-.appointment-form button{
+  input,
+  textarea,
+  select,
+  button{
     width:100%;
-}
+  }
 
-/* Témoignages */
-.testimonials{
-    padding:50px 20px;
-}
+  /* Témoignages */
 
-.testimonials h2{
-    font-size:32px;
-}
-
-.testimonial-container{
+  .testimonial-container{
     grid-template-columns:1fr;
-}
-
-/* Merci */
-.merci-box{
-    width:95%;
-    padding:30px;
-}
+  }
 
 }
