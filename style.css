@@ -1,0 +1,307 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    
+
+    background: linear-gradient(135deg, #DFF8F2, #B8F2E6);
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 8%;
+
+    background: white;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: seagreen;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: .3s;
+
+}
+
+.nav-links a:hover{
+    color: seagreen;
+
+}
+
+
+.btn{
+    background: seagreen;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: .3s;
+
+}
+
+.btn:hover{
+    background: #246b45;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    min-height: 90vh;
+    background: linear-gradient(135deg,#DFF8F2,#c8f4e7);
+
+}
+
+.hero-text{
+    width: 50%;
+
+}
+
+.hero-text h1{
+    font-size: 60px;
+    color: #1f2937;
+    line-height: 1.2;
+}
+
+.hero-text span{
+    color: #2e8b57;
+}
+
+.hero-text p{
+    margin: 25px 0;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+
+}
+
+.bouttons{
+    display: flex;
+    gap: 20px;
+}
+
+.btn2{
+    padding: 12px 25px;
+    border: 2px solid #2e8b57;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #2e8b57;
+    transition: .3s;
+
+}
+
+.btn2:hover{
+    background: #2e8b57;
+    color: white;
+
+}
+
+.hero-image{
+    width: 45%;
+    text-align: center;
+
+}
+
+.hero-image img{
+    width: 500px;
+    height: auto;
+    max-width: 500px;
+    border-radius: 30px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15) ;
+}
+
+/* ========================= */
+/* Rendez-vous */
+/* ========================= */
+
+.appointment{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:120px 8% 60px;
+    min-height:100vh;
+    background:#E8FFF8;
+}
+
+.appointment-form{
+    width:50%;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.appointment-form h1{
+    color:#2E8B57;
+    margin-bottom:10px;
+}
+
+.appointment-form p{
+    margin-bottom:30px;
+    color:#666;
+}
+
+.appointment-form form{
+    display:flex;
+    flex-direction:column;
+}
+
+.appointment-form label{
+    margin:10px 0 5px;
+    font-weight:bold;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+    margin-bottom:15px;
+    outline:none;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus{
+    border-color:#2E8B57;
+}
+
+.appointment-image{
+    width:45%;
+}
+
+.appointment-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+/* merci*/
+
+.merci{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E8FFF8;
+
+}
+
+
+.merci-box{
+    width: 500px;
+    background: white;
+padding: 50px;
+text-align: center;
+border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+
+}
+.check{
+    width: 90px;
+    height: 90px;
+    background: #2E8B57;
+    color: white;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+.merci-box h1{
+    margin-top: 20px;
+    color: #2E8B57;
+
+}
+
+.merci-box p{
+    margin: 20px 0 30px;
+    line-height: 1.8;
+    color: #555;
+}
+/* Témoignages */
+
+.testimonials{
+    padding:80px 8%;
+    background:#F5FFF9;
+    text-align:center;
+}
+
+.testimonials h2{
+    font-size:42px;
+    color:#2E8B57;
+    margin-bottom:50px;
+}
+
+.testimonial-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.testimonial-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-10px);
+}
+
+.testimonial-card p{
+    font-size:17px;
+    line-height:1.8;
+    color:#555;
+}
+
+.stars{
+    color:#FFD700;
+    font-size:24px;
+    margin:20px 0;
+}
+
+.testimonial-card h4{
+    color:#2E8B57;
+}

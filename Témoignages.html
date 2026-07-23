@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Témoignages | Vita Thérapie</title>
+
+    <link rel="stylesheet" href="temoignages.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="back-btn">← Retour</a>
+
+        <h1>Témoignages</h1>
+
+    </header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Vita Thérapie
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="A propos.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+        <a href="rendez-vous.html" class="btn">
+            Prendre rendez-vous
+        </a>
+
+    </nav>
+
+    <section class="testimonials">
+
+        <h2>Ce que disent nos patients</h2>
+
+      <form id="reviewForm">
+
+    <input type="text" id="nom" placeholder="Votre nom" required>
+
+    <input type="email" id="email" placeholder="Votre email" required>
+
+    <textarea id="commentaire"
+              placeholder="Votre commentaire" required></textarea>
+
+    <div class="rating">
+
+
+<input type="radio" name="rating" id="star5" value="5">
+<label for="star5">★</label>
+
+<input type="radio" name="rating" id="star4" value="4">
+<label for="star4">★</label>
+
+<input type="radio" name="rating" id="star3" value="3">
+<label for="star3">★</label>
+
+<input type="radio" name="rating" id="star2" value="2">
+<label for="star2">★</label>
+
+<input type="radio" name="rating" id="star1" value="1">
+<label for="star1">★</label>
+
+</div>
+
+<button type="submit" class="btn">
+    Envoyer
+</button>
+</form>
+
+
+        <p class="subtitle">
+            Découvrez les avis de nos patients sur leur expérience chez Vita Thérapie.
+        </p>
+
+        <div class="testimonial-container">
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    Excellent accueil et très bon suivi.
+                    Grâce aux séances de kinésithérapie,
+                    j'ai retrouvé ma mobilité rapidement.
+                </p>
+
+                <h3>Dr.ilhame qmych</h3>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    Équipe professionnelle, cabinet propre
+                    et prise en charge de grande qualité.
+                </p>
+
+                <h3>secretaire.loubna qmych</h3>
+
+            </div>
+
+            <div class="testimonial-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>l'etat de meuble est le cabinet</p>
+
+            <h3>meuble</h3>
+
+            </div>
+
+
+        </div>
+<h2>Avis des patients</h2>
+
+<div id="liste-temoignages" class="testimonial-container">
+
+</div>
+    </section>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="temoignages.js"></script>
+
+</body>
+
+</html>
