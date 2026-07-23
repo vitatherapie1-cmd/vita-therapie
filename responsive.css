@@ -111,3 +111,49 @@ p{
     margin-bottom:35px;
     line-height:1.6;
 }
+
+/* Responsive téléphone */
+@media (max-width: 768px) {
+
+  .appointment {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .appointment-form,
+  .appointment-image {
+    width: 100%;
+  }
+
+  .appointment-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
