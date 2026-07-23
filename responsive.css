@@ -112,48 +112,51 @@ p{
     line-height:1.6;
 }
 
-/* Responsive téléphone */
-@media (max-width: 768px) {
+... code li kayn 3andk ...
 
-  .appointment {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
+@media (max-width:768px){
 
-  .appointment-form,
-  .appointment-image {
-    width: 100%;
-  }
+    .navbar{
+        flex-direction:column;
+        padding:20px;
+        gap:15px;
+    }
 
-  .appointment-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+    .nav-links{
+        flex-direction:column;
+        gap:15px;
+        width:100%;
+        text-align:center;
+    }
 
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
+    .appointment{
+        flex-direction:column;
+        padding:140px 20px 40px;
+        gap:30px;
+    }
 
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+    .appointment-form,
+    .appointment-image{
+        width:100%;
+    }
 
-  input,
-  textarea,
-  select,
-  button {
-    width: 100%;
-    box-sizing: border-box;
-  }
+    .appointment-form{
+        padding:25px;
+    }
 
-  h1 {
-    font-size: 32px;
-  }
+    .appointment-image img{
+        width:100%;
+        height:auto;
+    }
+
+    .appointment-form h1{
+        font-size:38px;
+    }
+
+    input,
+    select,
+    textarea,
+    button{
+        width:100%;
+    }
 }
