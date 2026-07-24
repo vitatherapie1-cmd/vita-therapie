@@ -126,3 +126,27 @@ form{
 }
 
 }
+@media (max-width:768px){
+
+.hero,
+.about,
+.contact,
+.services,
+.cards{
+    flex-direction:column;
+}
+
+.hero-text,
+.about-text,
+.left,
+.right,
+.card{
+    width:100%;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+}
