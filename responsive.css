@@ -107,9 +107,9 @@
 }
 
 @media (max-width:768px){}
-    .menu-toggle{
+.menu-toggle{
     display:block;
-    font-size:28px;
+    font-size:32px;
     cursor:pointer;
 }
 
@@ -119,8 +119,9 @@
     top:80px;
     left:0;
     width:100%;
-    background:white;
+    background:#fff;
     flex-direction:column;
+    text-align:center;
     padding:20px 0;
 }
 

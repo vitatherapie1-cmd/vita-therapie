@@ -310,3 +310,18 @@ box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
 .menu-toggle{
     display:none;
 }
+.menu-toggle{
+    display: none;
+}
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+    align-items:center;
+}
