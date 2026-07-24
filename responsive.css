@@ -1,130 +1,128 @@
-/* ========================= */
-/* Responsive Mobile */
-/* ========================= */
+/* ===========================
+   Responsive - Téléphone
+=========================== */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px){
 
-  .navbar{
-    display:flex;
+/* Navbar */
+.navbar{
     flex-direction:column;
     align-items:center;
     gap:15px;
-    padding:20px;
-    position:relative;
-  }
+    padding:15px 20px;
+}
 
-  .logo{
-    font-size:42px;
-    text-align:center;
-  }
+.logo{
+    font-size:28px;
+}
 
-  .nav-links{
-    display:flex;
+.navbar ul{
     flex-direction:column;
-    gap:12px;
+    width:100%;
+    gap:15px;
     padding:0;
     margin:0;
-  }
+    text-align:center;
+}
 
-  .nav-links li{
+.navbar ul li{
     list-style:none;
-  }
+}
 
-  .btn{
-    width:220px;
+.btn{
+    display:inline-block;
+    width:auto;
     text-align:center;
-  }
+}
 
-  /* Hero */
-
-  .hero{
+/* ABOUT */
+.about{
     flex-direction:column;
-    text-align:center;
-    padding:170px 20px 40px;
-  }
+    width:95%;
+    margin:40px auto;
+    gap:30px;
+}
 
-  .hero-text,
-  .hero-image{
+.about-image,
+.about-text{
     width:100%;
-  }
+}
 
-  .hero-text h1{
-    font-size:36px;
-    line-height:1.2;
-  }
-
-  .hero-text p{
-    font-size:18px;
-  }
-
-  .hero-image img{
+.about-image img{
     width:100%;
-    max-width:350px;
+    max-width:100%;
     height:auto;
-  }
+}
 
-  .bouttons{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
-  }
+.about-text h1{
+    font-size:34px;
+}
 
-  /* Rendez-vous */
+/* CONTACT */
+.contact{
+    grid-template-columns:1fr;
+    width:95%;
+    gap:30px;
+}
 
-  .appointment{
+.left,
+.right{
+    width:100%;
+}
+
+form{
+    width:100%;
+    padding:25px;
+}
+
+.map{
+    width:95%;
+}
+
+.map iframe{
+    height:300px;
+}
+
+/* SERVICES */
+.services{
+    grid-template-columns:1fr;
+    width:95%;
+}
+
+.card img{
+    height:auto;
+}
+
+.header{
+    height:auto;
+    padding:20px;
+}
+
+.header h1{
+    font-size:32px;
+}
+
+.back-btn{
+    position:static;
+    transform:none;
+    display:inline-block;
+    margin-bottom:15px;
+}
+
+/* RENDEZ-VOUS */
+.appointment{
     flex-direction:column;
     padding:140px 20px 40px;
-  }
+}
 
-  .appointment-form,
-  .appointment-image{
+.appointment-form,
+.appointment-image{
     width:100%;
-  }
+}
 
-  .appointment-form{
-    padding:25px;
-  }
-
-  .appointment-image img{
+.appointment-image img{
     width:100%;
     height:auto;
-  }
-
-  input,
-  textarea,
-  select,
-  button{
-    width:100%;
-  }
-
-  /* Témoignages */
-
-  .testimonial-container{
-    grid-template-columns:1fr;
-  }
-
 }
 
-@media (max-width:768px){}
-.menu-toggle{
-    display:block;
-    font-size:32px;
-    cursor:pointer;
-}
-
-.nav-links{
-    display:none;
-    position:absolute;
-    top:80px;
-    left:0;
-    width:100%;
-    background:#fff;
-    flex-direction:column;
-    text-align:center;
-    padding:20px 0;
-}
-
-.nav-links.active{
-    display:flex;
 }
